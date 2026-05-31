@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "build": "cd frontend && npm install && npm run build",
-    "start": "node backend/index.js"
+  "start": "node backend/index.js",
+  "postinstall": "cd frontend && npm install"
   },
   "keywords": [],
   "author": "",
