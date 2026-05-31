@@ -27,10 +27,10 @@ app.use(cors(corsOption));
 // routes
 app.use("/api/v1/user",userRoute); 
 app.use("/api/v1/message",messageRoute);
-app.use(express.static(path.join(__dirname, "frontend", "dist")));
+app.use(express.static(path.join(__dirname, "frontend", "build")));
 
-app.get("/{*any}", (_, res) => {
-    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+app.get("*", (_, res) => {
+    res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"));
 });
  
 
