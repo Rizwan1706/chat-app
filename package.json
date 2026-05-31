@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "build":"cd frontend && npm install && npm run build",
   "start": "node backend/index.js"
   
   },
